@@ -1,0 +1,95 @@
+=================================================================
+NLP Assessment 2: Translation Evaluation Scores
+=================================================================
+
+Model Used: facebook/nllb-200-distilled-600M
+Number of Sentences: 100
+Source Language: English (eng_Latn)
+Target Language: Hindi (hin_Deva)
+
+----------------------------------------
+EVALUATION METRICS
+----------------------------------------
+
+BLEU Score:  18.09
+  - BLEU = 18.09 48.7/23.9/13.3/8.5 (BP = 0.951 ratio = 0.952 hyp_len = 1617 ref_len = 1699)
+
+CHRF Score:  41.00
+  - chrF2 = 41.00
+
+TER Score:   72.22
+  - TER = 72.22
+
+----------------------------------------
+SCORE INTERPRETATION
+----------------------------------------
+
+BLEU (BiLingual Evaluation Understudy):
+  Range: 0-100 (higher is better)
+  Measures n-gram overlap between translation and reference.
+  > 30 is generally considered good for MT systems.
+
+CHRF (Character n-gram F-score):
+  Range: 0-100 (higher is better)
+  Measures character-level n-gram overlap.
+  More robust than BLEU for morphologically rich languages like Hindi.
+
+TER (Translation Edit Rate):
+  Range: 0-100+ (lower is better)
+  Measures the number of edits needed to transform translation to reference.
+  < 50 is generally considered acceptable.
+
+----------------------------------------
+SAMPLE TRANSLATIONS
+----------------------------------------
+
+Sentence 1:
+  English:    It's so quiet...where are the kodama?
+  Reference:  मैं कच्चे लोहे का ढलाई खाना सूँघ सकता हूँ...
+  Generated:  यह इतना शांत है ... कोडामा कहाँ हैं?
+
+Sentence 2:
+  English:    God—to whom belongs what is in the heavens and the earth. And woe to the disbelievers from a severe torment.
+  Reference:  जिसका वह सब है जो कुछ आकाशों में है और जो कुछ धरती में है। इनकार करनेवालों के लिए तो एक कठोर यातना के कारण बड़ी तबाही है
+  Generated:  अल्लाह ही का है जो कुछ आकाशों में है और जो कुछ धरती में है। और इनकार करनेवालों के लिए कठोर यातना से धिक्कार है
+
+Sentence 3:
+  English:    And I said: ask forgiveness of your Lord; verily He is ever Most Forgiving.
+  Reference:  "और मैंने कहा, अपने रब से क्षमा की प्रार्थना करो। निश्चय ही वह बड़ा क्षमाशील है,
+  Generated:  और मैंने कहा, "अपने रब से क्षमा माँगो। निश्चय ही वह बड़ा क्षमाशील है।"
+
+Sentence 4:
+  English:    Select a project on %1 database server to open:
+  Reference:  डाटाबेस सर्वर% 1 पर कोई परियोजना खोलने के लिए चुनें:
+  Generated:  खोलने के लिए %1 डेटाबेस सर्वर पर एक परियोजना चुनेंः
+
+Sentence 5:
+  English:    "But if I shall, before I wake,
+  Reference:  "लेकिन मैं करेगा अगर मैं जाग से पहले,"
+  Generated:  "लेकिन अगर मैं, जागने से पहले,
+
+Sentence 6:
+  English:    So peace on him the day he was born, the day he will die, and the day that he will be raised from the dead.
+  Reference:  और (हमारी तरफ से) उन पर (बराबर) सलाम है जिस दिन पैदा हुए और जिस दिन मरेंगे और जिस दिन (दोबारा) ज़िन्दा उठा खड़े किए जाएँगे
+  Generated:  तो जिस दिन वह पैदा हुआ और जिस दिन मर जाएगा और जिस दिन वह ज़िन्दा किया जाएगा उस पर सलाम हो
+
+Sentence 7:
+  English:    When he came to it, a voice cried from the right of the watercourse, in the sacred hollow, coming from the tree: 'Moses, I am God, the Lord of all Being.'
+  Reference:  फिर जब वह वहाँ पहुँचा तो दाहिनी घाटी के किनारे से शुभ क्षेत्र में वृक्ष से आवाज़ आई, "ऐ मूसा! मैं ही अल्लाह हूँ, सारे संसार का रब!"
+  Generated:  और जब वह उस (पानी) के पास पहुँचा तो उस (पानी) के दाहिने हिस्से से (एक) आवाज़ (आकर) रूख से निकल रही थी कि ऐ मूसा मैं ख़ुदा सारे जहाँन का परवरदिगार हूँ
+
+Sentence 8:
+  English:    Satan seeketh only to cast among you enmity and hatred by means of strong drink and games of chance, and to turn you from remembrance of Allah and from (His) worship. Will ye then have done?
+  Reference:  शैतान की तो बस यही तमन्ना है कि शराब और जुए की बदौलत तुममें बाहम अदावत व दुशमनी डलवा दे और ख़ुदा की याद और नमाज़ से बाज़ रखे तो क्या तुम उससे बाज़ आने वाले हो
+  Generated:  शैतान तो बस शराब और जुआ के ज़रिए तुम में दुश्मनी और नफरत डालना चाहता है और तुम्हें ख़ुदा की याद से और उसकी इबादत से रोकना चाहता है तो क्या तुम कुछ करोगे
+
+Sentence 9:
+  English:    Formics might have wiped us out the last time, you know.
+  Reference:  फॉर्मिकस् हमें पिछली बार बाहर सफाया हो सकता है, तुम्हें पता है.
+  Generated:  फोर्मिक्स हमें पिछले बार खत्म कर सकते हैं, आप जानते हैं.
+
+Sentence 10:
+  English:    Report to the shatterdome in two hours
+  Reference:  दो घंटे में shatterdome को रिपोर्ट
+  Generated:  दो घंटे में खंडहर में रिपोर्ट
+
